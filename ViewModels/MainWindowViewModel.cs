@@ -1,12 +1,13 @@
 ﻿using Prism.Mvvm;
 using Reactive.Bindings;
 using Reactive.Bindings.Extensions;
+using System.ComponentModel;
 using System.Reactive.Disposables;
 using System.Threading.Tasks;
 
 namespace Arc.ViewModels
 {
-	public class MainWindowViewModel : BindableBase
+	public class MainWindowViewModel : BindableBase, INotifyPropertyChanged
 	{
 		/// <summary>
 		/// タイトル
